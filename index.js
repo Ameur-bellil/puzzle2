@@ -5,9 +5,14 @@ const thmasInputText = document.querySelector('#thmas-input-text');
 thmasButton.addEventListener('click', clickButton);
 
 function clickButton() {
-var URL = "https://tayssirgh.github.io/puzzle3-" + thmasInputText.value + "__45.9/";
+    var URL = "https://ameur-bellil.github.io/puzzle3/" ;
+    var correctinput = parseInt(thmasInputText.value);
 
-var win = window.open(URL, "_blank");
+    if (correctinput === 220) {
+        var win = window.open(URL, "_blank");
+    }else{
+        window.alert("Try again")
+    }
 }
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
