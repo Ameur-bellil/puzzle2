@@ -40,7 +40,7 @@ thmasButton.addEventListener('click', clickButton);
 
 function clickButton() {
     var URL = "https://ameur-bellil.github.io/puzzle3/" ;
-    var correctinput = parseInt(thmasInputText.value);
+    var correctinput = parseInt(thmasInputText.value.trim());
 
     if (correctinput === 220) {
         var win = window.open(URL, "_blank");
